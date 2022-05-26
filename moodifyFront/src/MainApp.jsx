@@ -25,11 +25,17 @@ function MainApp({
       <div className="p-5 w-85">
         {/* Search box */}
         <div>
-          <input type="search" placeholder="Search Music (in progress)" />
+          <input type="search" placeholder="Search Music" />
         </div>
 
         {/* song squares */}
-        <h2 className="mt-5 mb-3">Hi <span className="text-primary" id="username">{username}</span>, listen to {mood} songs</h2>
+        <h2 className="mt-5 mb-3">
+          Hi{" "}
+          <span className="text-primary" id="username">
+            {username}
+          </span>
+          , listen to {mood} songs
+        </h2>
         <div className="d-flex mt-3 w-100 justify-content-between align-items-center">
           <div className="circle" onClick={() => prev()}>
             <i className="fas fa-arrow-left"></i>
