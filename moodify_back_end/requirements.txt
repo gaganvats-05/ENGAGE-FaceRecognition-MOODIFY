@@ -18,7 +18,6 @@ certifi
 cffi
 charset-normalizer
 click
-cmake
 coverage
 cryptography
 cycler
@@ -32,15 +31,9 @@ django-filter
 djangorestframework
 dlib
 executing
-face-recognition
-face-recognition-models
-Flask
 flatbuffers
 frozenlist
 gast
-google-auth
-google-auth-oauthlib
-google-pasta
 grpcio
 gunicorn
 h5py
