@@ -13,24 +13,34 @@ What you're looking for is Moodify! Just enjoy that moment, scream or cry out to
 
 Moodify is a facial expression recognition-based  music suggestion website that cheers up users and saves time while searching for a song that matches their mood.
 
-1)It capture's video from the user's webcam, feed it into a model that can predict emotions and generate an appropriate target tag.
+1) It capture's video from the user's webcam, feed it into a model that can predict emotions and generate an appropriate target tag.
 
-2)It recognizes facial expression based on the 7 categories i.e., angry, sad, fear, happy, disgust, surprise, and neutral.
+2) It recognizes facial expression based on the 7 categories i.e., angry, sad, fear, happy, disgust, surprise, and neutral.
 
-3)Based on the emotion it gives the user songs from the database.
+3) Based on the emotion it gives the user songs from the database.
 
-4)If a user wishes to watch movies/songs then a list of movies/songs matching their mood are suggested with a movie/songs poster.
+4) If a user wishes to watch movies/songs then a list of movies/songs matching their mood are suggested with a movie/songs poster.
 
-5)When a user clicks on the movie that he wishes to watch, they will be redirected to the IMDB website and for songs, it redirects them to the Spotify website.
+5) When a user clicks on the movie that he wishes to watch, they will be redirected to the IMDB website and for songs, it redirects them to the Spotify website.
 ## Features
 ***User Features***
-- Authentication
+- Authentication 
+    - SignIn
+    - SignUp
 - Facial Recognition
 - Mood Detection
+    - Happy
+    - Sad
+    - Neutral
+    - Angry
+    - Surprised
 - Song Recommendations
 - Music Player
 - Music Search
 - Song queue
+- Follow a friend
+- See your people who are following you
+
 
 ***Administration Features***
 - Authentication
@@ -73,32 +83,37 @@ Moodify is a facial expression recognition-based  music suggestion website that 
 
 ## Run Locally
 
-Clone the project
+- Clone the project
 
 ```bash
   git clone https://github.com/gaganvats-05/ENGAGE-FaceRecognition-MOODIFY.git
 ```
 
-Go to the project directory
+- Go to the project directory
 
 ```bash
   cd ENGAGE-FaceRecognition-MOODIFY
 ```
 
-Install dependencies for backend
+- Install dependencies for backend
 
 ```bash
   cd moodify_back_end
   pip install -r requirements.txt
 ```
 
-Start the  backend server
+- Start the  backend server
 
 ```bash
   python manage.py runserver
 ```
-Install dependencies for frontend
+- For using administration features, create a superuser in django application
+```bash
+  python manage.py createsuperuser
+```
+after running this command set username for admin and password.
 
+- Install dependencies for frontend
 ```bash
   cd moodifyFront
   npm install
@@ -115,4 +130,3 @@ Start the frontend server
 **Client:** React, React-bootstrap, Javascript, HTML, CSS
 
 **Server:** Python, Django, OpenCV, Tensorflow
-
