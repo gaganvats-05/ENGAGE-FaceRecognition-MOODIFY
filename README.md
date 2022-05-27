@@ -13,15 +13,15 @@ What you're looking for is Moodify! Just enjoy that moment, scream or cry out to
 
 Moodify is a facial expression recognition-based  music suggestion website that cheers up users and saves time while searching for a song that matches their mood.
 
-1) It capture's video from the user's webcam, feed it into a model that can predict emotions and generate an appropriate target tag.
+1 ) It capture's video from the user's webcam, feed it into a model that can predict emotions and generate an appropriate target tag.
 
-2) It recognizes facial expression based on the 7 categories i.e., angry, sad, fear, happy, disgust, surprise, and neutral.
+2 ) It recognizes facial expression based on the 7 categories i.e., angry, sad, fear, happy, disgust, surprise, and neutral.
 
-3) Based on the emotion it gives the user songs from the database.
+3 ) Based on the emotion it gives the user songs from the database.
 
-4) If a user wishes to watch movies/songs then a list of movies/songs matching their mood are suggested with a movie/songs poster.
+4 ) If a user wishes to watch songs then a list of songs matching their mood are suggested with songs poster.
 
-5) When a user clicks on the movie that he wishes to watch, they will be redirected to the IMDB website and for songs, it redirects them to the Spotify website.
+5 ) When a user clicks on the song that he wants to play, the song is added to the music player queue.
 ## Features
 ***User Features***
 - Authentication 
@@ -81,6 +81,13 @@ Moodify is a facial expression recognition-based  music suggestion website that 
 - Available moods
 ![logo](https://res.cloudinary.com/dgg6izgtw/image/upload/v1653523419/Engage/Screenshot_2022-05-26_at_5.31.18_AM_djoewr.png)
 
+## Tech Stack
+
+**Client:** React, React-bootstrap, Javascript, HTML, CSS
+
+**Server:** Python, Django, OpenCV, Tensorflow
+
+
 ## Run Locally
 
 - Clone the project
@@ -125,8 +132,15 @@ Start the frontend server
     npm start
 ```
 
-## Tech Stack
+## Architecture 
+![App Screenshot](https://res.cloudinary.com/dgg6izgtw/image/upload/v1653685135/Engage/Untitled_Diagram_hwgudn.jpg)
 
-**Client:** React, React-bootstrap, Javascript, HTML, CSS
 
-**Server:** Python, Django, OpenCV, Tensorflow
+## Roadmap
+
+- Implement follow feature to  see playlists of your friends
+- Integrate Spotify account
+- Give Movie Recommendations
+- UI Improvement
+ 
+
